@@ -5,7 +5,8 @@ cities = [["Chicago",41.881832, -87.623177],
           ["Boston", 42.355083, -71.065880],
           ["Madison", 43.073051, -89.401230],
           ["Austin", 30.266666, -97.733330],
-          ["Knoxville", 35.964668, -83.926453]]
+          ["Knoxville", 35.964668, -83.926453,
+	   "Urbana-Champaign", 40.1106, 88.2073]]
 scale = 5
 
 map = Basemap(llcrnrlon=-125,llcrnrlat=25,urcrnrlon=-65,urcrnrlat=50,
