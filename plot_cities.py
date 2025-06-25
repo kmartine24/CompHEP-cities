@@ -16,6 +16,9 @@ map.drawstates()
 map.drawcoastlines()
 map.drawcountries()
 
+#sets ocean color
+map.drawlsmask(land_color=(0, 0, 0, 0), ocean_color='xkcd:lightblue', lakes=True)
+
 # Get the location of each city and plot it
 for (city, latitude, longitude) in cities:
     x, y = map(longitude, latitude)
