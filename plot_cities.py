@@ -9,8 +9,8 @@ cities = [["Chicago",41.881832, -87.623177],
 scale = 5
 
 map = Basemap(llcrnrlon=-125,llcrnrlat=25,urcrnrlon=-65,urcrnrlat=50,
-#        projection='lcc',lat_1=32,lat_2=45,lon_0=-95)
-	projection = 'lcc', resolution = 'l', lat_0=38, lon_0=-98)
+	width=5000000,height=12000000,
+	projection = 'lcc', resolution = 'l', lat_0=5, lon_0=-98)
 
 map.drawstates()
 map.drawcoastlines()
