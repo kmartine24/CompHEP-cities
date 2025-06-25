@@ -3,7 +3,9 @@ from mpl_toolkits.basemap import Basemap
 
 cities = [["Chicago",41.881832, -87.623177],
           ["Boston", 42.355083, -71.065880],
-          ["Madison", 43.073051, -89.401230]]
+          ["Madison", 43.073051, -89.401230],
+          ["Austin", 30.266666, -97.733330],
+          ["Knoxville", 35.964668, -83.926453]]
 scale = 5
 
 map = Basemap(llcrnrlon=-119,llcrnrlat=22,urcrnrlon=-64,urcrnrlat=49,
@@ -14,5 +16,5 @@ map.drawstates()
 # Get the location of each city and plot it
 for (city, latitude, longitude) in cities:
     x, y = map(longitude, latitude)
-    map.plot(x, y, marker='o',color='Red')
+    map.plot(x, y, marker='o',color='plum')
 plt.show()
